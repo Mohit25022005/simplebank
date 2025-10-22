@@ -6,7 +6,7 @@ import (
 	"time"
 
 	"github.com/stretchr/testify/require"
-	"github.com/techschool/simplebank/util"
+	"github.com/Mohit25022005/simplebank/util"
 )
 
 func createRandomEntry(t *testing.T, account Account) Entry {
