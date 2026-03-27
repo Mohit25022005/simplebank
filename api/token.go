@@ -6,9 +6,9 @@ import (
 	"net/http"
 	"time"
 
+	"github.com/gin-gonic/gin"
 	db "github.com/Mohit25022005/simplebank/db/sqlc"
 	"github.com/Mohit25022005/simplebank/token"
-	"github.com/gin-gonic/gin"
 )
 
 type renewAccessTokenRequest struct {

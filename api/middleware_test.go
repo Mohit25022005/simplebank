@@ -1,3 +1,4 @@
+
 package api
 
 import (
@@ -7,10 +8,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/Mohit25022005/simplebank/token"
-	"github.com/Mohit25022005/simplebank/util"
 	"github.com/gin-gonic/gin"
 	"github.com/stretchr/testify/require"
+	"github.com/Mohit25022005/simplebank/token"
+	"github.com/Mohit25022005/simplebank/util"
 )
 
 func addAuthorization(

@@ -11,12 +11,12 @@ import (
 	"reflect"
 	"testing"
 
-	mockdb "github.com/Mohit25022005/simplebank/db/mock"
-	db "github.com/Mohit25022005/simplebank/db/sqlc"
-	"github.com/Mohit25022005/simplebank/util"
 	"github.com/gin-gonic/gin"
 	"github.com/golang/mock/gomock"
 	"github.com/stretchr/testify/require"
+	mockdb "github.com/Mohit25022005/simplebank/db/mock"
+	db "github.com/Mohit25022005/simplebank/db/sqlc"
+	"github.com/Mohit25022005/simplebank/util"
 )
 
 type eqCreateUserParamsMatcher struct {
@@ -291,7 +291,7 @@ func TestLoginUserAPI(t *testing.T) {
 
 	for i := range testCases {
 		tc := testCases[i]
-		
+
 		t.Run(tc.name, func(t *testing.T) {
 			ctrl := gomock.NewController(t)
 			defer ctrl.Finish()
